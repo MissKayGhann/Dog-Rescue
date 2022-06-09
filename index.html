@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    <h1>Dog Rescue Registration</h1>
+   <div class="container">
+        <form action="https://myserver.com/accept.aspx" method="POST">
+        <div>
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" name="firstName" placeholder="...Forename..."></input>
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" name="lastName" placeholder="...Surname..."></input>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value = "Female">Female</option>
+                <option value = "Male">Male</option>
+            </select>
+        </div>
+        <div>
+            <label for="colour">Colour</label>
+            <input id="colour" type="color" name="colour"></input>
+        </div>
+        <div>
+            <label for="availableFrom">Available From</label>
+            <input id="availableFrom" type="date" name="availableFrom"></input>
+        </div>
+        <div>
+            <label for="shots">Shots</label>
+            <select id="shots">
+                <option value = "speyed">speyed</option>
+                <option value = "neutered">neutered</option>
+            </select>
+        </div>
+        <div>
+            <label for="chipped">Do you have a chip?</label>
+            <select id="chipped">
+                <option value ="YES">YES</option>
+                <option value ="NO">NO</option>
+            </select>
+        </div>
+        <div>
+            <label for="breed">Breed</label>
+            <select id="breed">
+                <option value="Bulldog">Bulldog</option>
+                <option value="Labrador Retriever">Labrador Retriever</option>
+                <option value="German Shephard">German Shephard</option>
+                <option value="Poodle">Poodle</option>
+                <option value="Golden Retriever">Golden Retriever</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="French Bulldog">French Bulldog</option>
+                <option value="Bichon Frise">Bichon Frise</option>
+                <option value="Boxer">Boxer</option>
+                <option value="Border Collie">Border Collie</option>
+                <option value="Siberian Husky">Siberian Husky</option>
+                <option value="Pug">Pug</option>
+                <option value="Pomeranian">Pomeranian</option>
+            </select>
+        </div>
+        <div>
+            <label for="temprament">Temprament</label>
+            <input id="temprament" type="range" name="temprament" min="1" max="5"> (1 = very shy, 5=very friendly)</input>
+        </div>
+     </form>
+     <button id="saveInfo" type ="button" onclick="saveDog()">Submit</button>
+    </div> 
+    <div id="boxes"></div>
+</body>
+</html>
